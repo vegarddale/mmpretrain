@@ -19,4 +19,4 @@ mkdir $DATA_ROOT/meta
 tar -xzvf $DATA_ROOT/caffe_ilsvrc12.tar.gz -C $DATA_ROOT/meta
 
 # remove useless data files
-rm -R $DOWNLOAD_DIR/ImageNet-1K
+# rm -R $DOWNLOAD_DIR/ImageNet-1K

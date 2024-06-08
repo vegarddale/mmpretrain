@@ -30,6 +30,7 @@ from .sparse_modules import (SparseAvgPooling, SparseBatchNorm2d, SparseConv2d,
                              SparseSyncBatchNorm2d)
 from .swiglu_ffn import SwiGLUFFN, SwiGLUFFNFused
 from .vector_quantizer import NormEMAVectorQuantizer
+from .dcnv3_ka import DCNv3_SW_KA
 
 __all__ = [
     'channel_shuffle',
@@ -88,6 +89,7 @@ __all__ = [
     'SparseBatchNorm2d',
     'SparseLayerNorm2D',
     'SparseSyncBatchNorm2d',
+    'DCNv3_SW_KA'
 ]
 
 if WITH_MULTIMODAL:

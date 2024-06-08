@@ -28,7 +28,8 @@ def main():
     else:
         raise ValueError('invalid input shape')
 
-    model = get_model(args.config)
+    # model = get_model(args.config)
+    model = get_model("./configs/dscan/dscan_base7_224.py")
     model.eval()
     if hasattr(model, 'extract_feat'):
         model.forward = model.extract_feat
